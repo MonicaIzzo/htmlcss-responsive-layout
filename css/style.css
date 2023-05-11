@@ -1,0 +1,46 @@
+/* Reset CSS */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+/* Custom PROPERTIES */
+:root {
+    --title-color: #e53170;
+    --link-color: #00abe9;
+}
+
+
+
+
+/* Generics */
+body {
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Utilties */
+.conteiner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.debug {
+    border: 2px dotted red;
+}
+
+/* Header */
+
+/* Main */
+
+/* Footer */
