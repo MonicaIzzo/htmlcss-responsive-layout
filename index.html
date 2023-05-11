@@ -7,7 +7,7 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS">
     <meta name="author" content="Monica Izzo">
-    <title>Lezione #014 | CSS layout media query </title>
+    <title>Lezione #016 | CSS layout media query </title>
     
 <!-- icon-->
 <!-- <link rel="icon" href="" type="image/">-->
@@ -31,31 +31,39 @@
     <header>
         <div class="navbar">
             <div class="conteiner">
-                <div id="logo">logo</div>
+                <div id="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
                 <div class="nav">
                     <ul>
-                        <li>link 01</li>
-                        <li>link 02</li>
-                        <li>link 03</li>
-                        <li>link 05</li>
-                        <li>link 06</li>
+                        <li><a href="#planning">Planning</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li class="btn"><a href="#get-started" class="btn">Get Started</a></li>
                     </ul>
                 </div>
+                <div id="hamburger"><a href="#" ><i class="fa-solid fa-bars"></i></a></div>
             </div>
         </div>
     </header>
 <!-- section characteristics -->
     <section class="conteiner">
         <div class="row">
-            <div class="characteristics-items items-2x">01</div>
-            <div class="characteristics-items">02</div>
-            <div class="characteristics-items">03</div>
-            <div class="characteristics-items">04</div>
-            <div class="characteristics-items">05</div>
-        </div>
+<!-- section characteristics 01 -->
+            <div class="characteristics-items items-2x"></div>
+<!-- section characteristics 02 -->
+            <div class="characteristics-items"></div>
+<!-- section characteristics 03 -->
+            <div class="characteristics-items"></div>
+<!-- section characteristics 04 -->
+            <div class="characteristics-items"></div>
+<!-- section characteristics 05 --> 
+            <div class="characteristics-items"></div>
+        </div>    
     </section>
 <!-- section strategic planning -->
-    <section class="strategic-planning">
+    <section class="strategic-planning" id="planning">
         <div class="row conteiner">
             <div class="strategic-item debug">
                 1
@@ -66,7 +74,7 @@
         </div>
     </section>
 <!-- section testimonial -->
-    <div class="testimonial">
+    <div class="testimonial" id="testimonials">
         <div class="row conteiner">
             <div class="testimonial-items">01</div>
             <div class="testimonial-items">02</div>
@@ -74,7 +82,7 @@
         </div>
     </div>
 <!-- section benefit -->
-    <section class="benefit">
+    <section class="benefit" id="features">
         <div class="row conteiner">
             <div class="benefit-items">
             01
@@ -97,7 +105,7 @@
         </div>
     </section>
 <!-- section about -->
-    <section class="about conteiner">
+    <section class="about conteiner" id="about">
         <div class="row">
             <div class="about-items debug col-large">01</div>
             <div class="about-items debug col-small">02</div>
@@ -105,7 +113,7 @@
     </section>
 <!-- footer -->
 <footer>
-    <div class="footer-top">
+    <div class="footer-top" id="get-started">
 
     </div>
     <div class="footer-bottom">
