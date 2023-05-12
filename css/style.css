@@ -3,6 +3,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+text-align: center;
 } 
 
 /* Custom PROPERTIES */
@@ -169,7 +170,7 @@ header {
     border-radius: 20px;
     letter-spacing: 0.4rem;
     font-weight: 700;
-    margin: 15px;
+    margin: 15px 0;
     display: inline-block;
 }
 
@@ -191,24 +192,78 @@ header {
 
 
 /* section strategic planning */
-.strategic-planning,
-.benefit {
-    height: 930px;
+.strategic-planning {
     background-color: var(--secondary-color);
+    color: white;
+    padding: 40px;
 }
+
+.strategic-content, strategic-item {
+    flex-basis: 50%
+}
+
+.strategic-content h2, .strategic-content p {
+    text-align: left;
+}
+
+.development {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 60px;
+    align-self: flex-end;
+}
+
+.strategic-item .development h4 {
+    color: black;
+}
+
+.development img {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+.development .down {
+    color: black;
+    background-color: var(--secondary-color);
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+
+
+
 
 .strategic-planning .row {
     display: flex;
     flex-wrap: nowrap;
     gap: 0;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: flex-end;
     height: 100%;
+}
+.strategic-planning .strategic-planning h4 {
+    color: white;
 }
 
 .strategic-item {
     flex-basis: 50%;
+    color: white;
 }
+
+.strategic-item h3 {
+    flex-basis: 50%;
+    color: white;
+}
+
 
 /* section testimonial */
 .testimonial {
@@ -230,6 +285,12 @@ header {
     margin: 50px 0;
     border: 2px solid red;
     flex-basis: calc(100% / 3 - 17px);
+}
+
+.benefit {
+    height: 930px;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 /* section about */
@@ -283,6 +344,30 @@ header {
         height: 100%;
         padding: 0 20px;
     }
+    
+    .strategic-planning .row  {
+        display: block;
+    }
+    .strategic-planning .row .strategic-content  {
+        margin: 40px 0;
+    }
+    
+    .strategic-planning .row .development  {
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+    }
+    
+    
+    
+    .strategic-planning .row .strategic-content h2  {
+        font-size: 56px;
+        margin-bottom: 40px;
+    }
+    
+     .development  {
+        margin: 0;
+    }
 
 }
 
@@ -292,7 +377,7 @@ header {
 
 @media screen and (max-width: 576px) {
     .conteiner {
-    max-width: 480px;
+    max-width: 440px;
     margin: 0 auto;
 }
     .characteristics-items
@@ -307,5 +392,11 @@ header {
     display: block;
     width: 60%; 
     margin: 0 auto;
+    }
+    
+    
+    .strategic-planning .row .strategic-content h2  {
+    font-size: 38px;
+    margin-bottom: 40px;
     }
 }
