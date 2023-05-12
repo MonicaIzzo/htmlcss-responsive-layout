@@ -270,13 +270,65 @@ header {
 }
 
 .testimonial .testimonial-items {
-    height: 280px;
     background-color: var(--secondary-color);
     border-radius: 50px;
-    margin: 50px 0;
     flex-basis: 100%;
-
+    gap: 20px;
 }
+
+.testimonial-header h2  {
+    font-size: 48px;
+    color: var(--secondary-color);
+}
+
+.testimonial-header p  {
+    margin-bottom: 20px;
+}
+
+.testimonial-items {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.testimonial-left{
+    flex-basis: 200px;
+}
+
+.testimonial-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonial-img img {
+    object-fit: cover;
+    height: 200px;
+}
+}
+
+.testimonial-right{
+    flex-basis: 80%;
+}
+
+.testimonial-right p {
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+    font-style: normal;
+}
+
+.fa-quote-left, .fa-quote-right {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px
+}
+
+
+
+
 /* section benefit */
 .benefit .benefit-items {
     height: 280px;
@@ -399,4 +451,20 @@ header {
     font-size: 38px;
     margin-bottom: 40px;
     }
+    
+    .testimonial-items {
+	display: block;
+	text-align: center;
+    padding: 50px;
+    }
+    
+    .testimonial-img{
+	margin: 0 auto;
+    }
+    
+    .testimonial-right p {
+    text-align: center;
+    font-size: 20px;    
+}
+    
 }
