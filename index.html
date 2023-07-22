@@ -1,254 +1,367 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS">
-    <meta name="author" content="Monica Izzo">
-    <title>Lezione #016 | CSS layout media query </title>
-    
-<!-- icon-->
-<!-- <link rel="icon" href="" type="image/">-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Monica Izzo" />
+    <title>Lezione #016 | CSS layout media query</title>
 
-<!-- fontawesome 6 -->
-    <script src="https://kit.fontawesome.com/c7ed230053.js" crossorigin="anonymous"></script>
+    <!-- fontawesome 6 -->
+    <script
+      src="https://kit.fontawesome.com/c7ed230053.js"
+      crossorigin="anonymous"
+    ></script>
 
-<!-- fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- stylesheet -->
-<link rel="stylesheet" href="css/style.css" type="text/css">
-    
-</head>
-<body>
-<!-- header -->
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- header -->
     <header>
-        <div class="navbar">
-            <div class="conteiner">
-                <div id="logo">
-                    <img src="img/logo.png" alt="logo">
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li><a href="#planning">Planning</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li class="btn"><a href="#get-started" class="btn">Get Started</a></li>
-                    </ul>
-                </div>
-                <div id="hamburger"><a href="#" ><i class="fa-solid fa-bars"></i></a></div>
-            </div>
-        </div>
-    </header>
-<!-- section characteristics -->
-    <section class="conteiner">
-<!-- section characteristics 01 -->        
-        <div class="row">
-            <div class="characteristics-items items-2x">
-                <div class="characteristics-content">
-                    <h4>Get a demo application</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="#" class="btn-highlighted"><i class="fa-brands fa-apple"></i>App Store</a>
-                </div>
-                <div class="characteristics-img">
-                <div class="phone">
-                    <img src="img/phone.png" alt="phone">
-                </div>
-            	</div>
-            </div>
-<!-- section characteristics 02 -->
-             <div class="characteristics-items">
-                <div>
-                    <i class="fa-solid fa-file-code"></i>
-                    <h3>Clean Code</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>    
-            </div>
-<!-- section characteristics 03 -->
-            <div class="characteristics-items">
-                <div>
-                    <i class="fa-solid fa-compass-drafting"></i>
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div> 
-            </div>
-<!-- section characteristics 04 -->
-             <div class="characteristics-items">
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div> 
-            </div>
-<!-- section characteristics 05 -->
-            <div class="characteristics-items">
-                <div>
-                    <i class="fa-solid fa-bullhorn"></i>    
-                    <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div> 
-            </div>
-        </div>  
-       
-    </section>
-<!-- section strategic planning -->
-    <section class="strategic-planning" id="planning">
-        <div class="row conteiner">
-                <div class="strategic-content">
-                    <img src="img/planning1.png" alt="planning">
-                    <h2>Strategic Planning</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="strategic-item">
-                    <div class="development">
-                    <img src="img/planning2.png" alt="planning">
-                    <h4>App Developement</h4>
-                    <p><i>Develop an on-demand app for your delivery bussiness to reach your tsrgeted cusromers without any interruption.</i></p>
-                    <a href="#" class="down"><i class="fa-solid fa-down-long"></i></a>    
-                    </div>
-                </div>
-        </div>
-    </section>
-<!-- section testimonials -->
-    <div class="testimonial" id="testimonials">
+      <div class="navbar">
         <div class="conteiner">
-            <div class="testimonial-header">
-            <p>TESTIMONIALS</p>
-            <h2>We are committed expert partners</h2>
-            <p>we place huge on strong relationship and have seen the benefit they bring to our business. customer feedback is vitl in helping us to get it right.</p>    
-            </div>
-            <div class="row">
-<!-- section testimonial 01 -->            
-            <div class="testimonial-items">
-                <div class="testimonial-left">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial1.jpg" alt="testimonial 1">
-                    </div>    
-                </div>
-                <div class="testimonial-right">
-                    <p><cite>
-                    <i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet. <i class="fa-solid fa-quote-right"></i>
-                    </cite></p>
-                    <p><strong>NAT REYNOLDS</strong>
-                </div>
-            </div>
-<!-- section testimonial 02 -->              
-            <div class="testimonial-items">
-                <div class="testimonial-left">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial2.jpg" alt="testimonial 1">
-                    </div>    
-                </div>
-                <div class="testimonial-right">
-                    <p><cite>
-                    <i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet. <i class="fa-solid fa-quote-right"></i>
-                    </cite></p>
-                    <p><strong>CELIA ALMEDA</strong>
-                </div>
-            </div>
-<!-- section testimonial 03 -->              
-            <div class="testimonial-items">
-                <div class="testimonial-left">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial3.jpg" alt="testimonial 1">
-                    </div>    
-                </div>
-                <div class="testimonial-right">
-                    <p><cite>
-                    <i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet. <i class="fa-solid fa-quote-right"></i>
-                    </cite></p>
-                    <p><strong>BOB ROBERTS</strong>
-                </div>
-            </div>
+          <div id="logo">
+            <img src="img/logo.png" alt="logo" />
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="#planning">Planning</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li class="btn">
+                <a href="#get-started" class="btn">Get Started</a>
+              </li>
+            </ul>
+          </div>
+          <div id="hamburger">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
         </div>
-        </div>    
-    </div>
-<!-- section benefit -->
-    <section class="benefit" id="features">
-        <div class="row conteiner">
-<!-- section benefit 01 -->            
-            <div class="benefit-items">
-                <h2>01</h2>
-                <h3>Hight Quality</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">more</a>
+      </div>
+    </header>
+    <!-- section characteristics -->
+    <section class="conteiner">
+      <!-- section characteristics 01 -->
+      <div class="row">
+        <div class="characteristics-items items-2x">
+          <div class="characteristics-content">
+            <h4>Get a demo application</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a href="#" class="btn-highlighted"
+              ><i class="fa-brands fa-apple"></i>App Store</a
+            >
+          </div>
+          <div class="characteristics-img">
+            <div class="phone">
+              <img src="img/phone.png" alt="phone" />
             </div>
-<!-- section benefit 02 -->                 
-            <div class="benefit-items">
-                <h2>02</h2>
-                <h3>Creative Team</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">more</a>
-            </div>
-<!-- section benefit 03 -->                 
-            <div class="benefit-items">
-                <h2>03</h2>
-                <h3>Amazing Results</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">more</a>
-            </div>
-<!-- section benefit 04 -->                 
-            <div class="benefit-items">
-                <h2>04</h2>
-                <h3>Best Pricing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">more</a>
-            </div>
-<!-- section benefit 05 -->                 
-            <div class="benefit-items">
-                <h2>05</h2>
-                <h3>Innovations</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">more</a>
-            </div>
-<!-- section benefit 06 -->                 
-            <div class="benefit-items">
-                <h2>06</h2>
-                <h3>24/7 Support</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">more</a>
-            </div>
-            </div>
+          </div>
+        </div>
+        <!-- section characteristics 02 -->
+        <div class="characteristics-items">
+          <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h3>Clean Code</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <!-- section characteristics 03 -->
+        <div class="characteristics-items">
+          <div>
+            <i class="fa-solid fa-compass-drafting"></i>
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <!-- section characteristics 04 -->
+        <div class="characteristics-items">
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <!-- section characteristics 05 -->
+        <div class="characteristics-items">
+          <div>
+            <i class="fa-solid fa-bullhorn"></i>
+            <h3>Branding</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-<!-- section about -->
-    <section class="about conteiner" id="about">
+    <!-- section strategic planning -->
+    <section class="strategic-planning" id="planning">
+      <div class="row conteiner">
+        <div class="strategic-content">
+          <img src="img/planning1.png" alt="planning" />
+          <h2>Strategic Planning</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="strategic-item">
+          <div class="development">
+            <img src="img/planning2.png" alt="planning" />
+            <h4>App Developement</h4>
+            <p>
+              <i
+                >Develop an on-demand app for your delivery bussiness to reach
+                your tsrgeted cusromers without any interruption.</i
+              >
+            </p>
+            <a href="#" class="down"><i class="fa-solid fa-down-long"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section testimonials -->
+    <div class="testimonial" id="testimonials">
+      <div class="conteiner">
+        <div class="testimonial-header">
+          <p>TESTIMONIALS</p>
+          <h2>We are committed expert partners</h2>
+          <p>
+            we place huge on strong relationship and have seen the benefit they
+            bring to our business. customer feedback is vitl in helping us to
+            get it right.
+          </p>
+        </div>
         <div class="row">
-            <div class="about-items col-large">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <!-- section testimonial 01 -->
+          <div class="testimonial-items">
+            <div class="testimonial-left">
+              <div class="testimonial-img">
+                <img src="img/testimonial1.jpg" alt="testimonial 1" />
+              </div>
             </div>
-            <div class="about-items col-small">
-                <div class="about-img">
-                    <img src="img/about.jpg" alt="about">
-                </div>
-                <h3>I help companies tincidut tortor aliquam nulla facilisi cras fermentum odio. </h3>
-                <a><i class="fa-brands fa-linkedin"></i>Find me on linkedin</a>
-                <div><i class="fa-solid fa-quote-left"></i></div>
+            <div class="testimonial-right">
+              <p>
+                <cite>
+                  <i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                  sit amet. <i class="fa-solid fa-quote-right"></i>
+                </cite>
+              </p>
+              <p><strong>NAT REYNOLDS</strong></p>
             </div>
+          </div>
+          <!-- section testimonial 02 -->
+          <div class="testimonial-items">
+            <div class="testimonial-left">
+              <div class="testimonial-img">
+                <img src="img/testimonial2.jpg" alt="testimonial 1" />
+              </div>
+            </div>
+            <div class="testimonial-right">
+              <p>
+                <cite>
+                  <i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                  sit amet. <i class="fa-solid fa-quote-right"></i>
+                </cite>
+              </p>
+              <p><strong>CELIA ALMEDA</strong></p>
+            </div>
+          </div>
+          <!-- section testimonial 03 -->
+          <div class="testimonial-items">
+            <div class="testimonial-left">
+              <div class="testimonial-img">
+                <img src="img/testimonial3.jpg" alt="testimonial 1" />
+              </div>
+            </div>
+            <div class="testimonial-right">
+              <p>
+                <cite>
+                  <i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                  sit amet. <i class="fa-solid fa-quote-right"></i>
+                </cite>
+              </p>
+              <p><strong>BOB ROBERTS</strong></p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- section benefit -->
+    <section class="benefit" id="features">
+      <div class="row conteiner">
+        <!-- section benefit 01 -->
+        <div class="benefit-items">
+          <h2>01</h2>
+          <h3>Hight Quality</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#">more</a>
+        </div>
+        <!-- section benefit 02 -->
+        <div class="benefit-items">
+          <h2>02</h2>
+          <h3>Creative Team</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#">more</a>
+        </div>
+        <!-- section benefit 03 -->
+        <div class="benefit-items">
+          <h2>03</h2>
+          <h3>Amazing Results</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#">more</a>
+        </div>
+        <!-- section benefit 04 -->
+        <div class="benefit-items">
+          <h2>04</h2>
+          <h3>Best Pricing</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#">more</a>
+        </div>
+        <!-- section benefit 05 -->
+        <div class="benefit-items">
+          <h2>05</h2>
+          <h3>Innovations</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#">more</a>
+        </div>
+        <!-- section benefit 06 -->
+        <div class="benefit-items">
+          <h2>06</h2>
+          <h3>24/7 Support</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#">more</a>
+        </div>
+      </div>
     </section>
-<!-- footer -->
-<footer>
-    <div class="footer-top" id="get-started">
-        <p> GET STARTED</p>
+    <!-- section about -->
+    <section class="about conteiner" id="about">
+      <div class="row">
+        <div class="about-items col-large">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua
+          </p>
+        </div>
+        <div class="about-items col-small">
+          <div class="about-img">
+            <img src="img/about.jpg" alt="about" />
+          </div>
+          <h3>
+            I help companies tincidut tortor aliquam nulla facilisi cras
+            fermentum odio.
+          </h3>
+          <a><i class="fa-brands fa-linkedin"></i>Find me on linkedin</a>
+          <div><i class="fa-solid fa-quote-left"></i></div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer-top" id="get-started">
+        <p>GET STARTED</p>
         <h3>Simple, Trasparent Pricing</h3>
         <h2>It's Free!</h2>
-        <p>We're still in beta and we will be for awhile. As we add more functionality, we'll look intro other plans with more controls.</p>
+        <p>
+          We're still in beta and we will be for awhile. As we add more
+          functionality, we'll look intro other plans with more controls.
+        </p>
         <a href="#">Get Started</a>
         <p>Copyright 2021 Boolean &middot; Class XX &middot; Privacy Policy</p>
-    </div>
-    <div class="footer-bottom">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <a href="#">Boolean careers</a></p>
-    </div>
-</footer>
-</body>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+          <a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut
+          <a href="#">Boolean careers</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
