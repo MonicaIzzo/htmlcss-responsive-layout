@@ -25,27 +25,33 @@ body {
   font-family: "PT Sans", sans-serif;
   margin-top: 120px;
 }
+
 h3 {
   color: #0084fd;
   font-size: 22px;
   padding-bottom: 2rem;
 }
+
 h4 {
   color: #0084fd;
   font-size: 22px;
   padding-bottom: 2rem;
 }
+
 p {
   line-height: 2rem;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
 img {
   display: block;
   max-width: 100%;
 }
+
 section {
   margin: 100px 0;
 }
@@ -55,18 +61,23 @@ section {
   max-width: 1140px;
   margin: 0 auto;
 }
+
 .debug {
   border: 2px dotted red;
 }
+
 .marg-top-l {
   margin-top: var(--margin-bot-large);
 }
+
 .marg-bottom-l {
   margin-bottom: var(--margin-bot-large);
 }
+
 .pad-top-l {
   padding-top: var(--padding-top-large);
 }
+
 .pad-bottom-l {
   padding-bottom: var(--padding-bot-large);
 }
@@ -76,6 +87,7 @@ section {
 header {
   position: relative;
 }
+
 .navbar {
   background-color: var(--primary-color);
   color: white;
@@ -84,11 +96,12 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
+
 .navbar .conteiner {
   display: flex;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
   height: 100%;
 }
@@ -97,12 +110,13 @@ header {
   text-decoration: none;
   list-style: none;
   display: flex;
-  align-content: center;
   align-items: center;
 }
+
 .navbar .conteiner .nav ul li {
   padding: 10px;
 }
+
 .navbar .conteiner .nav ul li .btn {
   padding: 10px 16px;
   background-color: white;
@@ -124,6 +138,7 @@ header {
   gap: 25px;
   justify-content: space-around;
 }
+
 .characteristics-items {
   border-radius: 25px;
   background-color: var(--primary-light-color);
@@ -132,6 +147,7 @@ header {
   display: flex;
   text-align: center;
 }
+
 .items-2x {
   flex-basis: calc(2 * (100% / 3) - 17px);
   padding-top: 30px;
@@ -148,6 +164,7 @@ header {
   margin: 15px 0;
   display: inline-block;
 }
+
 .phone {
   max-width: 100%;
   align-self: flex-end;
@@ -168,6 +185,7 @@ header {
   color: white;
   padding: 40px;
 }
+
 .strategic-content,
 strategic-item {
   flex-basis: 50%;
@@ -177,6 +195,7 @@ strategic-item {
 .strategic-content p {
   text-align: left;
 }
+
 .development {
   background-color: white;
   color: black;
@@ -189,11 +208,13 @@ strategic-item {
 .strategic-item .development h4 {
   color: black;
 }
+
 .development img {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
+
 .development .down {
   color: black;
   background-color: var(--secondary-color);
@@ -204,6 +225,7 @@ strategic-item {
   padding: 15px;
   margin-top: 20px;
 }
+
 .strategic-planning .row {
   display: flex;
   flex-wrap: nowrap;
@@ -212,6 +234,7 @@ strategic-item {
   align-items: flex-end;
   height: 100%;
 }
+
 .strategic-planning .strategic-planning h4 {
   color: white;
 }
@@ -220,42 +243,48 @@ strategic-item {
   flex-basis: 50%;
   color: white;
 }
+
 .strategic-item h3 {
   flex-basis: 50%;
   color: white;
 }
 
 /* section testimonial */
-.testimonial {
-}
+.testimonial {}
+
 .testimonial .testimonial-items {
   background-color: var(--secondary-color);
   border-radius: 50px;
   flex-basis: 100%;
   gap: 20px;
 }
+
 .testimonial-header h2 {
   font-size: 48px;
   color: var(--secondary-color);
 }
+
 .testimonial-header p {
   margin-bottom: 30px;
 }
+
 .testimonial-items {
   display: flex;
-  align-content: center;
   align-items: center;
   padding: 20px;
 }
+
 .testimonial-left {
   flex-basis: 200px;
 }
+
 .testimonial-img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .testimonial-img img {
   object-fit: cover;
   height: 200px;
@@ -264,12 +293,14 @@ strategic-item {
 .testimonial-right {
   flex-basis: 80%;
 }
+
 .testimonial-right p {
   text-align: left;
   margin-bottom: 20px;
   color: white;
   font-style: normal;
 }
+
 .fa-quote-left,
 .fa-quote-right {
   font-style: normal;
@@ -286,17 +317,20 @@ strategic-item {
   flex-basis: calc(100% / 3 - 17px);
   padding: 40px;
 }
+
 .benefit .benefit-items h2 {
   text-align: left;
   color: var(--secondary-color);
   font-size: 48px;
   padding-bottom: 20px;
 }
+
 .benefit .benefit-items h3 {
   text-align: left;
   color: var(--secondary-color);
   padding-bottom: 20px;
 }
+
 .benefit .benefit-items p {
   color: black;
   text-align: left;
@@ -311,6 +345,7 @@ strategic-item {
   border-radius: 20px;
   letter-spacing: 0.4rem;
 }
+
 .benefit {
   background-color: var(--secondary-color);
   color: white;
@@ -322,29 +357,36 @@ strategic-item {
   margin-bottom: 100px;
   padding-bottom: 100px;
 }
+
 .about-items {
   position: relative;
 }
+
 .about-items h2 {
   text-align: left;
   font-size: 48px;
   color: var(--secondary-color);
   margin-bottom: 20px;
 }
+
 .about-items p {
   text-align: left;
   margin-bottom: 20px;
 }
+
 .col-large {
   flex-basis: calc(70% - 17px);
 }
+
 .col-small {
   flex-basis: calc(30% - 17px);
 }
+
 .col-small h3 {
   text-align: left;
   color: var(--secondary-color);
 }
+
 .col-small a {
   padding: 10px 20px;
   background-color: var(--secondary-color);
@@ -352,6 +394,7 @@ strategic-item {
   color: white;
   border-radius: 20px;
 }
+
 .fa-linkedin {
   padding: 0px 5px;
 }
@@ -363,6 +406,7 @@ strategic-item {
   overflow: hidden;
   margin: 0 auto;
 }
+
 .about-items .fa-quote-left {
   color: var(--secondary-color);
   position: absolute;
@@ -378,17 +422,21 @@ strategic-item {
   height: 400px;
   padding: 40px 0;
 }
+
 .footer-top {
   color: white;
 }
+
 .footer-top h2 {
   color: #fdc15f;
   font-size: 64px;
 }
+
 .footer-top h3 {
   color: white;
   font-size: 28px;
 }
+
 .footer-top a {
   background-color: white;
   color: var(--secondary-color);
@@ -398,6 +446,7 @@ strategic-item {
   display: inline-block;
   border-radius: 40px;
 }
+
 .footer-bottom {
   background-color: #333333;
   height: 100px;
@@ -411,23 +460,27 @@ strategic-item {
     max-width: 980px;
     margin: 0 40px;
   }
+
   .nav {
     display: none;
   }
+
   .navbar .conteiner #hamburger {
     display: inline;
   }
+
   .navbar .conteiner {
     display: flex;
     justify-content: space-between;
-    align-content: center;
     align-items: center;
     height: 100%;
     padding: 0 20px;
   }
+
   .strategic-planning .row {
     display: block;
   }
+
   .strategic-planning .row .strategic-content {
     margin: 40px 0;
   }
@@ -446,6 +499,7 @@ strategic-item {
   .development {
     margin: 0;
   }
+
   .benefit .benefit-items {
     flex-basis: calc(100% / 2 - 17px);
     padding: 40px;
@@ -454,9 +508,10 @@ strategic-item {
 
 @media screen and (max-width: 576px) {
   .conteiner {
-    max-width: 440px;
+    max-width: 520px;
     margin: 0 auto;
   }
+
   .characteristics-items {
     flex-basis: 100%;
   }
@@ -464,6 +519,7 @@ strategic-item {
   .items-2x {
     display: block;
   }
+
   .items-2x img {
     display: block;
     width: 60%;
@@ -473,6 +529,7 @@ strategic-item {
   .strategic-planning .row .strategic-content h2 {
     font-size: 38px;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .testimonial-items {
@@ -487,10 +544,90 @@ strategic-item {
 
   .testimonial-right p {
     text-align: center;
-    font-size: 20px;
+    font-size: 26px;
   }
+
   .benefit .benefit-items {
     flex-basis: calc(100% / 1 - 17px);
     padding: 40px;
+  }
+
+  .col-small {
+    flex-basis: calc(70% - 17px);
+  }
+
+  .footer-top {
+    padding: 40px 40px;
+    height: 650px;
+  }
+
+  .footer-bottom {
+    height: 240px;
+    padding: 20px 20px;
+  }
+
+  .col-small h3 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 20px;
+  }
+
+  .testimonial-img {
+    margin-bottom: 30px;
+  }
+
+  .col-large {
+    flex-basis: calc(100% - 17px);
+  }
+
+  h4,
+  h3 {
+    font-size: 36px;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  .strategic-content h2,
+  .strategic-content p {
+    text-align: center;
+  }
+
+  .testimonial-header h2 {
+    margin-bottom: 24px;
+  }
+
+  section {
+    margin: 60px 0;
+  }
+
+  .footer-top a {
+    padding: 20px 40px;
+    font-size: 36px;
+    display: block;
+    border-radius: 40px;
+  }
+
+  .col-small a {
+    padding: 20px 20px;
+    font-size: 26px;
+    display: block;
+  }
+
+  .benefit .benefit-items a {
+    padding: 10px 30px;
+    letter-spacing: 0.4rem;
+    font-size: 26px;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+  }
+
+  .btn-highlighted {
+
+    display: block;
+    font-size: 26px;
   }
 }
