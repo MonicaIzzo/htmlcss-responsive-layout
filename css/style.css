@@ -358,10 +358,6 @@ strategic-item {
   padding-bottom: 100px;
 }
 
-.about-items {
-  position: relative;
-}
-
 .about-items h2 {
   text-align: left;
   font-size: 48px;
@@ -508,8 +504,7 @@ strategic-item {
 
 @media screen and (max-width: 576px) {
   .conteiner {
-    max-width: 520px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .characteristics-items {
@@ -527,7 +522,7 @@ strategic-item {
   }
 
   .strategic-planning .row .strategic-content h2 {
-    font-size: 38px;
+    font-size: 32px;
     margin-bottom: 40px;
     text-align: center;
   }
@@ -544,7 +539,7 @@ strategic-item {
 
   .testimonial-right p {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .benefit .benefit-items {
@@ -582,12 +577,12 @@ strategic-item {
 
   h4,
   h3 {
-    font-size: 36px;
+    font-size: 26px;
     padding-bottom: 1rem;
   }
 
   p {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .strategic-content h2,
@@ -605,7 +600,7 @@ strategic-item {
 
   .footer-top a {
     padding: 20px 40px;
-    font-size: 36px;
+    font-size: 22px;
     display: block;
     border-radius: 40px;
   }
@@ -614,6 +609,7 @@ strategic-item {
     padding: 20px 20px;
     font-size: 26px;
     display: block;
+    width: 100%;
   }
 
   .benefit .benefit-items a {
